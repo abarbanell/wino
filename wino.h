@@ -2,6 +2,9 @@
 * Copyright (C) 2015 Project http://www.wino-board.de/
 * based on code by ITEAD Studio Teams (C) 2015 ITEADLIB_Arduino_WeeESP8266
 * License: http://www.gnu.org/licenses/gpl.html GPL version 2 or higher
+*
+* Tobias Abarbanell 2016-05-14: added getmac() function
+* see https://github.com/abarbanell/wino
 */
 // #warning "wino.h v1.4 loaded"
 
@@ -149,6 +152,13 @@ class WiFiESP {
      * @return the IP list. 
      */
     String getip(void);
+    
+    /**
+     * Get the MAC address of ESP8266. 
+     *
+     * @return the MAC list. 
+     */
+    String getmac(void);
     
     /**
      * max_enable=1 Enable IP MUX(multiple connection mode). 
